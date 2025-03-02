@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  body {
+    background-color: #f9f9f9;
+  }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 56px;
+    padding: 0 16px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    z-index: 100;
+  }
+  
+  .left-section {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #ff0000;
+    font-size: 20px;
+  }
+  
+  .logo span {
+    color: #000;
+    font-weight: 500;
+  }
+  
+  .middle-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 0 1 728px;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    height: 40px;
+    padding: 0 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 20px;
+    font-size: 16px;
+  }
+  
+  .search-btn {
+    height: 40px;
+    width: 64px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 20px 20px 0;
+    background-color: #f8f8f8;
+    cursor: pointer;
+  }
+  
+  .mic-btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #f8f8f8;
+    cursor: pointer;
+  }
+  
+  .right-section {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .right-section button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .profile-btn {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-color: #1a73e8;
+    color: white;
+    font-weight: 500;
+  }
+  
+  .content-container {
+    display: flex;
+    margin-top: 56px;
+    height: calc(100vh - 56px);
+  }
+  
+  .sidebar {
+    position: fixed;
+    left: 0;
+    width: 240px;
+    height: 100%;
+    padding: 12px 0;
+    background-color: white;
+    overflow-y: auto;
+  }
+  
+  .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 8px 24px;
+    gap: 24px;
+    cursor: pointer;
+  }
+  
+  .nav-link:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .nav-link.active {
+    background-color: #e5e5e5;
+  }
+  
+  .main-content {
+    margin-left: 240px;
+    padding: 24px 24px 0;
+    flex: 1;
+  }
+  
+  .filters {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+    overflow-x: auto;
+    padding-bottom: 12px;
+  }
+  
+  .filter-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  .filter-btn.active {
+    background-color: #030303;
+    color: white;
+  }
+  
+  .videos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .video-card {
+    cursor: pointer;
+  }
+  
+  .thumbnail {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #f2f2f2;
+  }
+  
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .video-info {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+  }
+  
+  .channel-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+  }
+  
+  .video-details {
+    flex: 1;
+  }
+  
+  .video-title {
+    font-weight: 500;
+    margin-bottom: 4px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .channel-name,
+  .video-stats {
+    color: #606060;
+    font-size: 14px;
+  }
+  
+  
